@@ -72,7 +72,7 @@
         
 
     </div>
-    <audio id="audio" src="https://pwdown.com/14111/Tum%20Jio%20Hazaro%20Saal%20-%20Happy%20Birthday%20Audio%20Song.mp3" loop></audio>
+    <audio id="music" src="https://pwdown.com/14111/Tum%20Jio%20Hazaro%20Saal%20-%20Happy%20Birthday%20Audio%20Song.mp3"></audio>
 
 
 
@@ -86,13 +86,15 @@
             
         }, 2000);
         function play(){
-            var audio = document.getElementById("audio");
+            var music = document.getElementById("music");
             audio.play();
+            console.log("Playing Music");
         
         }
         function stop(){
-            var audio = document.getElementById("audio");
+            var music = document.getElementById("music");
             audio.stop();
+            console.log("Stopping Music");
         
         }
         
